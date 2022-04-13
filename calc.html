@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div id="calculator-container">
+      <div class="icons"> <i class="fa-solid fa-arrow-rotate-right" onclick="reset()"></i>
+        <i class="fa-solid fa-xmark" onclick="window.close()"></i>
+    </div> 
+
+        <div id="display-box">
+            
+         <span id="display">0</span>
+        </div>
+        <div id="controlls">
+            <div id="operators1">
+             <button class="control-button" onclick="inverseFunction()">1/x</button>
+             <button class="control-button" onclick="squareFunction()">x<sup>2</sup></button>
+             <button class="control-button" onclick="sqrtFunction()"> &#x221A;x</button>
+             <button class="control-button" onclick="controlsFunction('/')">/</button>   
+            </div>
+
+            <div class="digits">
+             
+                <button class="digit-button" onclick="digitFunction('7')">7</button>
+                <button class="digit-button" onclick="digitFunction('8')">8</button>
+                <button class="digit-button" onclick="digitFunction('9')">9</button>
+                <button class="control-button" onclick="controlsFunction('*')">*</button>
+            </div>
+
+            <div class="digits">
+             
+                <button class="digit-button" onclick="digitFunction('4')">4</button>
+                <button class="digit-button" onclick="digitFunction('5')">5</button>
+                <button class="digit-button" onclick="digitFunction('6')">6</button>
+                <button class="control-button" onclick="controlsFunction('-')">-</button>
+            </div>
+
+            <div class="digits">
+             
+                <button class="digit-button" onclick="digitFunction('1')">1</button>
+                <button class="digit-button" onclick="digitFunction('2')">2</button>
+                <button class="digit-button" onclick="digitFunction('3')">3</button>
+                <button class="control-button" onclick="controlsFunction('+')">+</button>
+            </div>
+
+            <div id="operators-Down" class="digits">
+             
+                <button class="digit-button" onclick="negFunction()">+/-</button>
+                <button class="digit-button" onclick="digitFunction('0')">0</button>
+                <button class="digit-button" onclick="digitFunction('.')">.</button>
+                <button class="control-button" onclick="evaluateFunction()">=</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/bb256365d6.js" crossorigin="anonymous"></script>
+    <script src="calc.js"></script>
+</body>
+</html>
